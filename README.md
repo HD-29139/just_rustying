@@ -8,7 +8,7 @@ Install Rust and Cargo from [rust-lang.org](https://www.rust-lang.org/).
 
 and:
 
-```bash
+```sh
 git clone https://github.com/HD-29139/just_rustying.git
 cd just_rustying
 cargo run
