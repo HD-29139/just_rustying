@@ -31,7 +31,7 @@ fn main() {
     // println!("{rm}")
 
     let tup = (500, 56.6, 1);
-    let (x, y, z) =  tup;
+    let (x, y, z) = tup;
 
     println!("{y}");
 
@@ -40,9 +40,9 @@ fn main() {
 
     println!("{one} and {five_hundred}");
 
+    let a = [1, 2, 3, 4, 5];
 
+    let a = [10; 5];
+
+    println!("{:?}", a);
 }
-
-
-
-
