@@ -1,3 +1,4 @@
+use core::num;
 use std::io;
 
 const SPEED_OF_LIGHT: u64 = 299_792_458;
@@ -40,9 +41,34 @@ fn main() {
 
     println!("{one} and {five_hundred}");
 
-    let a = [1, 2, 3, 4, 5];
+    let a: [i32; 5] = [1, -5, 3, 4, 5];
 
-    let a = [10; 5];
+    // let a = [10; 5];
 
-    println!("{:?}", a);
+    // println!("{}", a[1]);
+
+    
+    loop {
+        let mut index = String::new();
+
+        println!("input the index value:");
+        io::stdin().read_line(&mut index).expect("failed to read");
+        let index: usize = match index.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Please input a valid number.");
+                continue;
+            }
+        };
+
+        if index >= a.len(){
+            println!("please input a less value");
+            continue;
+        }
+        else {
+            let element = a[index];
+            println!("The value of the element at index {index} is: {element}");
+            break;
+        }
+    }  
 }
