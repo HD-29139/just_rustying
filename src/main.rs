@@ -11,9 +11,9 @@ fn main() {
     const PI: f64 = 3.14159;
     const CIRCUMFERENCE: f64 = 2.0 * PI * 5.0;
 
-    println!("{FIVE_HOURS_IN_SECONDS}");
-    println!("{PI}");
-    println!("{CIRCUMFERENCE}");
+    // println!("{FIVE_HOURS_IN_SECONDS}");
+    // println!("{PI}");
+    // println!("{CIRCUMFERENCE}");
 
     let distance = 1_000_000_000;
     let time = time_to_travel(distance);
@@ -34,12 +34,12 @@ fn main() {
     let tup = (500, 56.6, 1);
     let (x, y, z) = tup;
 
-    println!("{y}");
+    // println!("{y}");
 
     let five_hundred = tup.0;
     let one = tup.2;
 
-    println!("{one} and {five_hundred}");
+    // println!("{one} and {five_hundred}");
 
     let a: [i32; 5] = [1, -5, 3, 4, 5];
 
@@ -62,7 +62,7 @@ fn main() {
         };
 
         if index >= a.len(){
-            println!("please input a less value");
+            println!("please input a smaller value");
             continue;
         }
         else {
@@ -70,5 +70,16 @@ fn main() {
             println!("The value of the element at index {index} is: {element}");
             break;
         }
-    }  
+    }
+
+        let a = [10, 20, 30, 40, 50];
+    
+        for element in a {
+            println!("the value is: {element}");
+        }
+
+        for number in (1..=4).rev() {
+            println!("{number}");
+        }
+    
 }
