@@ -103,5 +103,13 @@ fn main() {
     let p2 = personBuilder(String::from("Alejandro Hines"), 37, true);
 
     println!("Name: {} Age: {} Is alive: {}", p1.name, p1.age, p1.is_alive);
+
+    impl Person {
+        fn info(&self){
+            println!("Name: {} Age: {} Is alive: {}", self.name, self.age, self.is_alive)
+        }
+    }
+
+    p2.info();
         
 }
