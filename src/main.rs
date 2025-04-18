@@ -92,7 +92,7 @@ fn main() {
         is_alive: false,
     };
 
-    fn personBuilder(name: String, age: i32, is_alive: bool) -> Person {
+    fn person_builder(name: String, age: i32, is_alive: bool) -> Person {
         Person {
             name,
             age,
@@ -100,7 +100,7 @@ fn main() {
         }
     }
 
-    let p2 = personBuilder(String::from("Alejandro Hines"), 37, true);
+    let p2 = person_builder(String::from("Alejandro Hines"), 37, true);
 
     println!("Name: {} Age: {} Is alive: {}", p1.name, p1.age, p1.is_alive);
 
